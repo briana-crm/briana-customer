@@ -1,0 +1,10 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: briana-customer
+  cloud:
+    config:
+      uri: http://${CONFIG_SERVICE_HOST}:8888
+encrypt:
+  key: ${ENCRYPT_KEY}
